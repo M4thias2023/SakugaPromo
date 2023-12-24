@@ -1,0 +1,101 @@
+---
+import '../components/SakugaCard.scss'
+import "@splidejs/splide/css";
+---
+
+<div class="Sakuga-Card">
+  <div class="text-container">
+    <h1>Source Of Inspiration And Learning</h1>
+    <p>You will be able to <span>study and analyze the animation techniques</span> used in your favorite scenes.</p>
+  </div>
+    <!-- Slider main container -->
+  <div class="swiper" >
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="./resize-correction1.webp" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./resize-correction2.webp" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./resize-correction3.webp" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./resize-correction4.webp" alt="">
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>  
+  </div>
+</div>
+
+<style>
+
+  :root{
+    --swiper-pagination-color: #989898;
+    --swiper-navigation-size: 50px;
+    --swiper-pagination-bullet-inactive-color: #989898;
+    --swiper-pagination-bullet-inactive-opacity: .6
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 20px;
+    font-weight: 600;
+    color: #989898;
+  }
+  .swiper-pagination-bullet{
+    background: var(--swiper-pagination-bullet-inactive-color);
+  }
+
+  .swiper-pagination-bullet-active{
+    background: var(--swiper-pagination-color);
+    opacity: var(--swiper-pagination-bullet-inactive-opacity);
+
+  }
+</style>
+
+<script>
+  import Swiper from 'swiper';
+  // import Swiper styles
+  import 'swiper/css';
+  import { Navigation, Pagination } from 'swiper/modules';
+  import 'swiper/css/navigation';
+  import 'swiper/css/pagination';
+
+  // init Swiper:
+  new Swiper('.swiper', {
+    direction: 'horizontal',
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    modules: [Navigation, Pagination],
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+  });
+
+
+</script>

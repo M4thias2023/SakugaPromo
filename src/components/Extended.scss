@@ -1,0 +1,108 @@
+.ExtendedSection{
+    background: linear-gradient(#212121, #212121) padding-box, linear-gradient(360deg, transparent 15%,#B1213B) border-box;
+    border: 4px solid transparent;
+    width: 67%;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    height: 100%;
+    max-height: 600px;
+    margin-top: 10px;
+
+    & .ss-container{
+        width: fit-content;
+        padding: 10px;
+        background: rgb(59,59,59);
+        background: radial-gradient(circle, rgba(59,59,59,1) 0%, rgba(0,0,0,1) 100%);
+        border-radius: 10px;
+
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+
+    & .ExtendedText{
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+
+        & .demo-container{
+            background: linear-gradient(#212121, #212121) padding-box, linear-gradient(360deg, transparent 15%,#0596FF) border-box;
+            border: 3px solid transparent;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            padding: 10px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+            & video{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            width: 100%;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        
+        & h1{
+            font-size: clamp(20px, 5vw, 40px);
+            font-weight: 700;
+            font-family: 'Outfit-Bold';
+        }
+    
+        & p{
+            font-size: clamp(15px, 2vw, 20px);
+            font-weight: 300;
+            font-family: 'Outfit-Light';
+            width: 100%;
+            max-width: 500px;
+        }
+    
+    
+        & a{
+            text-decoration: none;
+            color: #FFF;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: 300;
+            font-family: 'Outfit-Bold';
+            width: fit-content;
+            max-width: 600px;
+            background-color: #B1213B;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+    }
+
+    
+}

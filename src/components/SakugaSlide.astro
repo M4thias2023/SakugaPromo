@@ -1,0 +1,48 @@
+---
+import "../components/SakugaSlide.scss";
+import "@splidejs/splide/css";
+import Slide from "./Slide.astro";
+---
+
+<div class="Sakuga-Card-Slide">
+  <div class="text-container">
+    <h1>Discover new series and movies</h1>
+    <p>
+      That you may not have known about, but that <span
+        >thanks to their animation will leave you breathless.</span
+      >
+    </p>
+  </div>
+  <section class="splide" aria-label="Beautiful Images">
+    <div class="splide__track">
+          <ul class="splide__list">
+            <div class="splide__slide">
+              <video src="./spencer.mp4"  autoplay muted loop></video>
+            </div>
+            <div class="splide__slide">
+              <video src="./ranma.mp4"  autoplay muted loop></video>
+            </div>
+            <div class="splide__slide">
+              <video src="./eureka.mp4"  autoplay muted loop></video>
+            </div>
+          </ul>
+    </div>
+</section>
+</div>
+<script>
+  import Splide from "@splidejs/splide";
+  import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+  
+  new Splide( '.splide', {
+    type: "loop",
+    width: "100%",
+    arrows: false,
+    pagination: true,
+    height: "100%",
+    gap: "1rem",
+    perPage: 1,
+    autoScroll: {
+      speed: 1, 
+    },
+  } ).mount( { AutoScroll } );
+</script>

@@ -1,0 +1,33 @@
+{
+  "name": "sakugabooru-landing",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.3.2",
+    "@astrojs/react": "^3.0.7",
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "@splidejs/splide-extension-video": "^0.8.0",
+    "@splinetool/runtime": "^0.9.523",
+    "@studio-freight/lenis": "^1.0.29",
+    "@types/react-dom": "^18.2.18",
+    "astro": "^4.0.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "swiper": "^11.0.5",
+    "typescript": "^5.3.3",
+    "viewerjs": "^1.11.6"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "sass": "^1.69.5"
+  }
+}

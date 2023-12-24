@@ -1,0 +1,103 @@
+.Sakuga-Card{
+    background: linear-gradient(#212121, #212121) padding-box, linear-gradient(360deg, transparent 15%,#B1213B) border-box;
+    border: 4px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 550px;
+    height: 100%;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, 0.23);
+            -webkit-box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, 0.23);
+            -moz-box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, 0.23);
+            transition: all 0.5s ease;
+    transition: all .5s ease;
+
+    @media only screen and (max-width: 1000px) {
+        z-index: 1;
+        
+    }
+
+    & .text-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+        margin-bottom: 30px;
+    }
+
+    & h1{
+        font-style: italic;
+        font-size: clamp(25px, 6vw, 30px);
+        font-weight: 700;
+    }
+
+    & p{
+        font-size: clamp(15px, 3vw, 20px);
+        font-weight: 300;
+        width: 100%;
+        max-width: 400px;
+
+        & span{
+            color: #FF7272;
+            font-style: italic;
+        }
+    }
+    
+    & .image-container{
+        background-color: #303030;
+        height: 100%;
+
+        & ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+    
+            & li{
+                list-style: none;
+            }
+    
+            & img{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .swiper{
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(circle, #252525 10%, #151515 90%);
+        border-radius: 10px;
+
+        & .swiper-wrapper{
+            width: 100%;
+            height: 100%;
+
+            & .swiper-slide{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                object-fit: contain;
+
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    object-fit: contain;
+                    max-height: 260px;
+                }
+            
+            }
+        }
+    }
+}
